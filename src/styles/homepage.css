@@ -1,0 +1,953 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* Header */
+.heroSection {
+  background-image: url("../images/header/heroImage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  min-height: 560px;
+  padding: 0% 0% 0% 0%;
+}
+
+/* hero Text Name and position */
+.heroText {
+  position: absolute;
+  left: 0;
+  top: 22%;
+  width: 100%;
+  z-index: 0;
+}
+
+.heroText h1 {
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #54565b;
+  text-transform: uppercase;
+}
+
+.heroText h3 {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 6% auto 0 auto;
+}
+
+/* Hero Social Icons */
+.heroSocialLinks {
+  position: absolute;
+  left: 0;
+  bottom: 13%;
+  width: 100%;
+  z-index: 0;
+}
+
+.heroSocialLinks img {
+  display: none;
+  margin: auto 15px auto 15px;
+  width: 50px;
+  height: 40px;
+}
+
+/* Sections Area (all) */
+.sectionArea {
+  height: 100%;
+  width: 100%;
+  min-height: 565px;
+  max-height: 1200px;
+  padding: 0% 0% 0% 0%;
+  position: relative;
+}
+
+/* Section Titles 
+(same css for all Section h2 titles) */
+.sectionTitle {
+  width: 100%;
+}
+
+.sectionTitle h2 {
+  font-size: 55px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 100%;
+  margin: auto auto;
+}
+
+/* Down Arrows Nav (all) */
+.downArrowBG {
+  position: absolute;
+  left: 0;
+  bottom: 3%;
+  width: 100%;
+  text-align: center;
+  z-index: 0;
+}
+
+.downArrowFG {
+  position: absolute;
+  left: 0;
+  bottom: 3%;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.downArrowFG img {
+  width: 62px;
+  height: 39px;
+  transition: transform 1.5s;
+}
+
+.downArrowFG img:hover {
+  transform: translate(0px, -10px);
+}
+
+.downArrowFG a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100); /* IE8 and earlier */
+}
+
+/* About me Section */
+.aboutMe {
+  background-color: #b73334;
+  background-image: url("../images/aboutme/fractals.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutMeTitle h2 {
+  color: #ffffff;
+}
+
+.aboutMeText {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
+  margin: 50px 0px;
+}
+
+/* Skills */
+.skills {
+  background-color: #f8efdb;
+}
+
+.skillsTitle h2 {
+  color: #b73334;
+}
+
+.skillImag1 {
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  display: grid;
+  grid-gap: 0px;
+  width: 100%;
+  margin: 40px auto 0px auto;
+}
+
+.skill-items {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-item1 {
+  grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.skill-item2 {
+  grid-area: 1 / 3 / span 1 / span 2;
+}
+
+.skill-item3 {
+  grid-area: 1 / 5 / span 1 / span 2;
+}
+
+.skill-item4 {
+  grid-area: 2 / 1 / span 1 / span 2;
+}
+
+.skill-item5 {
+  grid-area: 2 / 3 / span 1 / span 2;
+}
+
+.skill-item6 {
+  grid-area: 2 / 5 / span 1 / span 2;
+}
+
+.skill-item7 {
+  grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.skill-item8 {
+  grid-area: 3 / 3 / span 1 / span 2;
+  margin: 0px 0px 0px 0px;
+}
+
+.skill-item9 {
+  grid-area: 3 / 5 / span 1 / span 2;
+  margin: 0px 0px 0px 0px;
+}
+
+/* protfolio */
+.portfolio {
+  background-color: #e8af30;
+}
+
+.portfolioTitle h2 {
+  color: #f8efdb;
+}
+
+.companies {
+  display: inline-block;
+  width: 50%;
+}
+
+.portfolioImages {
+  grid-template-columns: 60px 60px 60px 60px 60px;
+  grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+  display: grid;
+  grid-gap: 0px;
+  margin: 5% auto 0px auto;
+  column-gap: 4px;
+  row-gap: 4px;
+  width: 312px;
+}
+
+.portfolio-items {
+  width: 120px;
+  height: 120px;
+}
+
+.portfolioImages img {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.portfolioImages img:hover {
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15);
+}
+
+.portfolio-item1 {
+  grid-area: 1 / 1 / span 2 / span 4;
+}
+
+.portfolio-item2 {
+  grid-area: 1 / 3 / span 2 / span 4;
+}
+
+.portfolio-item3 {
+  grid-area: 4 / 2 / span 2 / span 4;
+}
+
+.portfolio-item4 {
+  grid-area: 4 / 4 / span 2 / span 4;
+}
+
+.portfolio-item5 {
+  grid-area: 7 / 1 / span 2 / span 4;
+}
+
+.portfolio-item6 {
+  grid-area: 7 / 3 / span 2 / span 4;
+}
+
+.portfolio-item7 {
+  grid-area: 10 / 2 / span 2 / span 4;
+}
+
+.portfolio-item8 {
+  grid-area: 10 / 4 / span 2 / span 4;
+}
+
+.portfolio-item9 {
+  grid-area: 13 / 3 / span 2 / span 4;
+}
+
+.companies {
+  width: 100%;
+}
+
+.devices {
+  display: none;
+  width: 50%;
+  height: 100%;
+  background-image: url("../images/protfolio/devices.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% auto;
+}
+
+/* contact */
+.contact {
+  background-color: #8cbbbc;
+}
+
+.contactTitle h2 {
+  color: #e8af30;
+}
+
+.contactBody {
+  width: 320px;
+  margin: 15% auto 0px auto;
+  text-align: left;
+}
+
+.contactmargin1 {
+  margin: 0px 20px;
+}
+
+.contactmargin {
+  margin: 20px 20px;
+}
+
+.contacts p {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin: 0px 10px;
+  vertical-align: middle;
+}
+
+.contacts a {
+  text-decoration: none;
+}
+
+.contacts img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15%;
+}
+
+/* Medium devices (Small Mobile phones, 400px to 599px) */
+@media only screen and (min-width: 400px) {
+  /* hero Text Name and position */
+  .heroText {
+    position: absolute;
+    top: 22%;
+  }
+
+  .heroText h1 {
+    font-size: 50px;
+  }
+
+  .heroText h3 {
+    font-size: 25px;
+    margin: 5% auto 0 auto;
+  }
+
+  /* Hero Social Icons */
+  .heroSocialLinks {
+    bottom: 13%;
+  }
+
+  .heroSocialLinks img {
+    display: inline-block;
+    margin: auto 15px auto 15px;
+    width: 55px;
+    height: 45px;
+  }
+
+  /* Sections Area (all) */
+  .sectionArea {
+    min-height: 700px;
+  }
+
+  /* About me Section */
+  .aboutMeText {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 50px 0px;
+  }
+
+  /* Section Titles 
+  (same css for all Section h2 titles) */
+  .sectionTitle h2 {
+    font-size: 71px;
+    line-height: 46px;
+  }
+
+  /* protfolio */
+  .portfolioImages {
+    grid-template-columns: 70px 70px 70px 70px 70px;
+    grid-template-rows: 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px 35px;
+    display: grid;
+    grid-gap: 0px;
+    margin: 5% auto 0px auto;
+    column-gap: 4px;
+    row-gap: 4px;
+    width: 366px;
+  }
+
+  .portfolio-items {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Medium devices (large Mobile phones, 600px to 767px) */
+@media only screen and (min-width: 600px) {
+  /* hero Text Name and position */
+  .heroText {
+    position: absolute;
+    top: 22%;
+  }
+
+  .heroText h1 {
+    font-size: 50px;
+  }
+
+  .heroText h3 {
+    font-size: 25px;
+    margin: 5% auto 0 auto;
+  }
+
+  /* Hero Social Icons */
+  .heroSocialLinks {
+    bottom: 12%;
+  }
+
+  .heroSocialLinks img {
+    margin: auto 40px auto 40px;
+    width: 60px;
+    height: 50px;
+  }
+
+  /* About me Section */
+  .aboutMe {
+    min-height: 740px;
+  }
+  .aboutMeText {
+    font-size: 25px;
+    line-height: 40px;
+    margin: 100px 0px;
+  }
+
+  /* Section Titles 
+  (same css for all Section h2 titles) */
+  .sectionTitle h2 {
+    font-size: 100px;
+    line-height: 64px;
+  }
+
+  /* skills */
+  .skillImag1 {
+    grid-template-columns: 72px 72px 72px 72px 72px 72px 72px 72px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
+    display: grid;
+    grid-gap: 0px;
+    width: 580px;
+    margin: 40px auto 0px auto;
+  }
+
+  .skill-item1 {
+    grid-area: 1 / 2 / span 1 / span 2;
+  }
+
+  .skill-item2 {
+    grid-area: 1 / 4 / span 1 / span 2;
+  }
+
+  .skill-item3 {
+    grid-area: 1 / 6 / span 1 / span 2;
+  }
+
+  .skill-item4 {
+    grid-area: 2 / 1 / span 1 / span 2;
+  }
+
+  .skill-item5 {
+    grid-area: 2 / 3 / span 1 / span 2;
+  }
+
+  .skill-item6 {
+    grid-area: 2 / 5 / span 1 / span 2;
+  }
+
+  .skill-item7 {
+    grid-area: 2 / 7 / span 1 / span 2;
+  }
+
+  .skill-item8 {
+    grid-area: 3 / 3 / span 1 / span 2;
+    margin: -40px 0px 0px 0px;
+  }
+
+  .skill-item9 {
+    grid-area: 3 / 5 / span 1 / span 2;
+    margin: -40px 0px 0px 0px;
+  }
+
+  /* contact */
+  .contactBody {
+    width: 430px;
+    margin: 5% auto 0px auto;
+  }
+
+  .contactmargin1 {
+    margin: 0px 20px;
+  }
+
+  .contactmargin {
+    margin: 20px 20px;
+  }
+
+  .contacts p {
+    font-size: 22px;
+    margin: 0px 10px;
+  }
+}
+
+/* Medium devices (Ipad, 768px and 1023px) */
+@media only screen and (min-width: 768px) {
+  /* Header */
+  .heroSection {
+    background-image: url("../images/header/heroImage.png");
+    min-height: 750px;
+  }
+
+  /* hero Text Name and position */
+  .heroText {
+    position: absolute;
+    top: 21%;
+  }
+
+  .heroText h1 {
+    font-size: 90px;
+  }
+
+  .heroText h3 {
+    font-size: 30px;
+    margin: 2% auto 0 auto;
+  }
+
+  /* Hero Social Icons */
+  .heroSocialLinks {
+    bottom: 12%;
+  }
+
+  .heroSocialLinks img {
+    margin: auto 40px auto 40px;
+    width: 60px;
+    height: 50px;
+  }
+
+  /* Section Titles 
+  (same css for all Section h2 titles) */
+  .sectionTitle h2 {
+    font-size: 130px;
+    line-height: 86px;
+    width: 900px;
+  }
+
+  /* skills */
+  .skills {
+    min-height: 850px;
+  }
+  .skillImag1 {
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px;
+    display: grid;
+    grid-gap: 0px;
+    width: 720px;
+    margin: 40px auto 0px auto;
+  }
+
+  .skill-items {
+    width: 180px;
+    height: 250px;
+  }
+
+  /* contact */
+  .contactBody {
+    width: 470px;
+  }
+
+  .contactmargin1 {
+    margin: 0px 20px;
+  }
+
+  .contactmargin {
+    margin: 20px 20px;
+  }
+
+  .contacts p {
+    font-size: 25px;
+    margin: 0px 10px;
+  }
+
+  /* protfolio */
+  .portfolioImages {
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px;
+    grid-template-rows: 45px 45px 45px 45px 45px 45px 45px;
+    display: grid;
+    grid-gap: 0px;
+    margin: 10% auto 0px auto;
+    column-gap: 4px;
+    row-gap: 4px;
+    width: 748px;
+  }
+
+  .portfolio-items {
+    width: 180px;
+    height: 180px;
+  }
+
+  .portfolio-item1 {
+    grid-area: 1 / 1 / span 2 / span 4;
+  }
+
+  .portfolio-item2 {
+    grid-area: 1 / 3 / span 2 / span 4;
+  }
+
+  .portfolio-item3 {
+    grid-area: 1 / 5 / span 2 / span 4;
+  }
+
+  .portfolio-item4 {
+    grid-area: 1 / 7 / span 2 / span 4;
+  }
+
+  .portfolio-item5 {
+    grid-area: 4 / 2 / span 2 / span 4;
+  }
+
+  .portfolio-item6 {
+    grid-area: 4 / 4 / span 2 / span 4;
+  }
+
+  .portfolio-item7 {
+    grid-area: 4 / 6 / span 2 / span 4;
+  }
+
+  .portfolio-item8 {
+    grid-area: 7 / 3 / span 2 / span 4;
+  }
+
+  .portfolio-item9 {
+    grid-area: 7 / 5 / span 2 / span 4;
+  }
+
+  .companies {
+    width: 100%;
+  }
+}
+
+/* Medium devices (Ipad Pro 1024px and 1223px) */
+@media only screen and (min-width: 1024px) {
+  /* hero Text Name and position */
+  .heroText {
+    position: absolute;
+    top: 21%;
+  }
+
+  .heroText h1 {
+    font-size: 90px;
+  }
+
+  .heroText h3 {
+    font-size: 30px;
+    margin: 2% auto 0 auto;
+  }
+
+  /* Hero Social Icons */
+  .heroSocialLinks {
+    bottom: 8%;
+  }
+
+  .heroSocialLinks img {
+    margin: auto 70px auto 70px;
+    width: 80px;
+    height: 70px;
+  }
+
+  /* Section Titles 
+  (same css for all Section h2 titles) */
+  .sectionTitle h2 {
+    font-size: 145px;
+    line-height: 93px;
+  }
+
+  /* contact */
+  .contact {
+    min-height: 830px;
+  }
+
+  .contactBody {
+    width: 600px;
+  }
+
+  .contactmargin1 {
+    margin: 0px 20px;
+  }
+
+  .contactmargin {
+    margin: 20px 20px;
+  }
+
+  .contacts p {
+    font-size: 30px;
+    margin: 0px 10px;
+  }
+
+  /* protfolio */
+  .portfolio {
+    min-height: 920px;
+  }
+
+  .contactMagnoliaImage {
+    position: absolute;
+    left: 0px;
+    bottom: -3%;
+    text-align: left;
+  }
+
+  .portfolioImages {
+    grid-template-columns: 90px 90px 90px 90px 90px;
+    grid-template-rows: 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px;
+    display: grid;
+    grid-gap: 0px;
+    margin: 5% auto 0px auto;
+    column-gap: 4px;
+    row-gap: 4px;
+    width: 466px;
+  }
+
+  .portfolio-items {
+    width: 180px;
+    height: 180px;
+  }
+
+  .portfolio-item1 {
+    grid-area: 1 / 1 / span 2 / span 4;
+  }
+
+  .portfolio-item2 {
+    grid-area: 1 / 3 / span 2 / span 4;
+  }
+
+  .portfolio-item3 {
+    grid-area: 4 / 2 / span 2 / span 4;
+  }
+
+  .portfolio-item4 {
+    grid-area: 4 / 4 / span 2 / span 4;
+  }
+
+  .portfolio-item5 {
+    grid-area: 7 / 1 / span 2 / span 4;
+  }
+
+  .portfolio-item6 {
+    grid-area: 7 / 3 / span 2 / span 4;
+  }
+
+  .portfolio-item7 {
+    grid-area: 10 / 2 / span 2 / span 4;
+  }
+
+  .portfolio-item8 {
+    grid-area: 10 / 4 / span 2 / span 4;
+  }
+
+  .portfolio-item9 {
+    grid-area: 13 / 3 / span 2 / span 4;
+  }
+
+  .companies {
+    width: 50%;
+  }
+
+  .devices {
+    display: inline;
+    width: 50%;
+    height: 80%;
+    float: right;
+  }
+}
+
+/* Medium devices (laptops, 1224px and 1823px) */
+@media only screen and (min-width: 1224px) {
+  /* Header */
+  .heroSection {
+    background-image: url("../images/header/heroImage.png");
+    min-height: 750px;
+  }
+
+  /* hero Text Name and position */
+  .heroText {
+    position: absolute;
+    top: 21%;
+  }
+
+  .heroText h1 {
+    font-size: 110px;
+  }
+
+  .heroText h3 {
+    font-size: 30px;
+    margin: 1% auto 0 auto;
+  }
+
+  /* Hero Social Icons */
+  .heroSocialLinks {
+    bottom: 8%;
+  }
+
+  .heroSocialLinks img {
+    margin: auto 70px auto 70px;
+    width: 80px;
+    height: 70px;
+  }
+
+  /* Section Titles 
+  (same css for all Section h2 titles) */
+  .sectionTitle h2 {
+    font-size: 150px;
+    font-weight: 800;
+    line-height: 98px;
+    width: 1210px;
+  }
+}
+
+/* Medium devices (Desktops, 1824px and up) */
+@media only screen and (min-width: 1824px) {
+  /* Header */
+  .heroSection {
+    background-image: url("../images/header/heroImage.png");
+    min-height: 750px;
+  }
+
+  /* hero Text Name and position */
+  .heroText {
+    top: 21%;
+  }
+
+  .heroText h1 {
+    font-size: 110px;
+  }
+
+  .heroText h3 {
+    font-size: 30px;
+    margin: 1% auto 0 auto;
+  }
+
+  /* Hero Social Icons */
+  .heroSocialLinks {
+    bottom: 10%;
+  }
+
+  .heroSocialLinks img {
+    margin: auto 70px auto 70px;
+    width: 80px;
+    height: 70px;
+  }
+
+  /* protfolio */
+  .portfolioImages {
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px;
+    grid-template-rows: 45px 45px 45px 45px 45px 45px 45px;
+    display: grid;
+    grid-gap: 0px;
+    margin: 15% auto 0px auto;
+    column-gap: 4px;
+    row-gap: 4px;
+    width: 748px;
+  }
+
+  .portfolio-items {
+    width: 180px;
+    height: 180px;
+  }
+
+  .portfolio-item1 {
+    grid-area: 1 / 1 / span 2 / span 4;
+  }
+
+  .portfolio-item2 {
+    grid-area: 1 / 3 / span 2 / span 4;
+  }
+
+  .portfolio-item3 {
+    grid-area: 1 / 5 / span 2 / span 4;
+  }
+
+  .portfolio-item4 {
+    grid-area: 1 / 7 / span 2 / span 4;
+  }
+
+  .portfolio-item5 {
+    grid-area: 4 / 2 / span 2 / span 4;
+  }
+
+  .portfolio-item6 {
+    grid-area: 4 / 4 / span 2 / span 4;
+  }
+
+  .portfolio-item7 {
+    grid-area: 4 / 6 / span 2 / span 4;
+  }
+
+  .portfolio-item8 {
+    grid-area: 7 / 3 / span 2 / span 4;
+  }
+
+  .portfolio-item9 {
+    grid-area: 7 / 5 / span 2 / span 4;
+  }
+}
+/* Medium devices (Desktops, 1920px and up) */
+@media only screen and (min-width: 1920px) {
+  .heroSection {
+    min-height: 800px;
+  }
+
+  /* protfolio */
+  .portfolioImages {
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+    display: grid;
+    grid-gap: 0px;
+    margin: 15% auto 0px auto;
+    width: 835px;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+
+  .portfolio-items {
+    width: 200px;
+    height: 200px;
+  }
+}

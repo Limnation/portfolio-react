@@ -1,0 +1,51 @@
+/* footer */
+.footer {
+  background-color: #2c2c2c;
+  padding: 0px 3.5% 2px 3.5%;
+  vertical-align: middle;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  line-height: 16px;
+  color: #b9b9b9;
+  text-align: center;
+}
+
+/* Medium devices (large Mobile phones, 600px to 767px) */
+@media only screen and (min-width: 600px) {
+  /* footer */
+  .footer {
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  #siteBy img {
+    width: 40px;
+  }
+}
+
+/* Medium devices (Ipad, 768px and 1023px) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium devices (Ipad Pro 1024px and 1223px) */
+@media only screen and (min-width: 1024px) {
+  /* footer */
+  .footer {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+/* Medium devices (laptops, 1224px and 1823px) */
+@media only screen and (min-width: 1224px) {
+  /* footer */
+  .footer {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/* Medium devices (Desktops, 1824px and up) */
+@media only screen and (min-width: 1824px) {
+}
