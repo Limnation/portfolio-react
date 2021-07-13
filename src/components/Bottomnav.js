@@ -1,6 +1,6 @@
 import React from "react";
 // Import CSS File Dependency
-import "../styles/bottomNav.css";
+import "../styles/botNav.css";
 
 function BotNav() {
   return (
