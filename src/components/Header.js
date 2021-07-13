@@ -3,9 +3,18 @@ import React from "react";
 import "../styles/topNav.css";
 import "../styles/homepage.css";
 
+//javaScript object
+const background = {
+  src: "/images/header/heroImage.png",
+};
+
 function Header() {
   return (
-    <header className="heroSection" id="intro">
+    <header
+      className="heroSection"
+      style={{ backgroundImage: `url(${background})` }}
+      id="intro"
+    >
       <nav className="topnav" id="myTopnav">
         <a href="index.html" className="active">
           <img
@@ -19,47 +28,59 @@ function Header() {
           href="index.html#portfolio"
           onmouseover="onHover();"
           onmouseout="offHover();"
-          >portfolio</a>
+        >
+          portfolio
+        </a>
         <a
           className="navBar"
           href="index.html#aboutMe"
           onmouseover="onHover();"
           onmouseout="offHover();"
-          >about me</a>
+        >
+          about me
+        </a>
         <a
           className="navBar"
           href="index.html#contact"
           onmouseover="onHover();"
           onmouseout="offHover();"
-          >contact</a>
-        <a href="javascript:void(0);" className="icon" onclick="myClickFunction()"
-          >&#9776;</a>
+        >
+          contact
+        </a>
+        <a
+          href="javascript:void(0);"
+          className="icon"
+          onclick="myClickFunction()"
+        >
+          &#9776;
+        </a>
       </nav>
       <div className="heroText" id="heroText">
         <h1>Scott Allen Erwin</h1>
         <h3>Senior Web Specialist</h3>
       </div>
       <div className="heroSocialLinks">
-        <a href="mailto:scottallenerwin@gmail.com"
-          ><img src="./images/header/email.png" alt="E-mail"
-        /></a>
-        <a href="tel:770-328-2598"
-          ><img src="./images/header/phone.png" alt="Phonenumber 770-328-2598"
-        /></a>
-        <a href="https://www.linkedin.com/in/scott-erwin-b755b097/"
-          ><img src="./images/header/linkedin.png" alt="LinkedIn"
-        /></a>
-        <a href="https://www.facebook.com/scott.erwin2/"
-          ><img src="./images/header/facebookLogo.png" alt="Facebook"
-        /></a>
+        <a href="mailto:scottallenerwin@gmail.com">
+          <img src="./images/header/email.png" alt="E-mail" />
+        </a>
+        <a href="tel:770-328-2598">
+          <img src="./images/header/phone.png" alt="Phonenumber 770-328-2598" />
+        </a>
+        <a href="https://www.linkedin.com/in/scott-erwin-b755b097/">
+          <img src="./images/header/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://www.facebook.com/scott.erwin2/">
+          <img src="./images/header/facebookLogo.png" alt="Facebook" />
+        </a>
       </div>
       <nav>
         <div className="downArrowFG">
-          <a href="#aboutMe"
-            ><img
+          <a href="#aboutMe">
+            <img
               src="./images/navigation/arrows/arrowDownRed.png"
               alt="A downward facing red arrow"
-          /></a>
+            />
+          </a>
         </div>
         <div className="downArrowBG">
           <img

@@ -1,10 +1,19 @@
-import React from 'react';
+import React from "react";
 // Import CSS File Dependency
 import "../styles/homepage.css";
 
+//javaScript object
+const background = {
+  src: "/images/protfolio/devices.png",
+};
+
 function Portfolio() {
   return (
-    <section class="portfolio sectionArea" id="portfolio">
+    <section
+      class="portfolio sectionArea"
+      style={{ backgroundImage: `url(${background})` }}
+      id="portfolio"
+    >
       <div class="portfolioTitle sectionTitle">
         <h2>portfolio</h2>
       </div>
@@ -88,11 +97,12 @@ function Portfolio() {
       <div class="devices" id="devices"></div>
       <nav>
         <div class="downArrowFG">
-          <a href="#contact"
-            ><img
+          <a href="#contact">
+            <img
               src="./images/navigation/arrows/arrowDownblue.png"
               alt="A downward facing blue arrow"
-          /></a>
+            />
+          </a>
         </div>
         <div class="downArrowBG">
           <img
