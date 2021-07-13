@@ -2,7 +2,7 @@ import React from 'react';
 // Import CSS File Dependency
 import "../styles/homepage.css";
 
-function Header() {
+function AboutMe() {
   return (
     <section className="aboutMe sectionArea" id="aboutMe">
       <div className="aboutMeTitle sectionTitle">
@@ -43,4 +43,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default AboutMe;
