@@ -1,17 +1,23 @@
 import React from 'react';
-import Test from './components/Header';
-import Test from './components/Aboutme';
-import Test from './components/Skills';
-import Test from './components/Portfolio';
-import Test from './components/Contact';
-import Test from './components/Bottomnav';
-import Test from './components/Footer';
+import Header from './components/Header';
+import Aboutme from './components/Aboutme';
+import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Bottomnav from './components/Bottomnav';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
     <div>
-      <Test />
+      <Header />
+      <Aboutme />
+      <Skills />
+      <Portfolio />
+      <Contact />
+      <Bottomnav />
+      <Footer />
     </div>
   );
 }
