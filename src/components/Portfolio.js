@@ -11,7 +11,7 @@ function Portfolio() {
   return (
     <section
       class="portfolio sectionArea"
-      style={{ backgroundImage: `url(${background})` }}
+      style={{ backgroundImage: `url(${background.src})` }}
       id="portfolio"
     >
       <div class="portfolioTitle sectionTitle">

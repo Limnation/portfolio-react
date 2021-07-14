@@ -11,7 +11,7 @@ function AboutMe() {
   return (
     <section
       className="aboutMe sectionArea"
-      style={{ backgroundImage: `url(${background})` }}
+      style={{ backgroundImage: `url(${background.src})` }}
       id="aboutMe"
     >
       <div className="aboutMeTitle sectionTitle">

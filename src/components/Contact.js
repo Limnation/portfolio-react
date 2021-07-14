@@ -11,7 +11,7 @@ function Contact() {
         <div class="contactBody">
           <div class="contacts contactmargin1">
             <a href="https://goo.gl/maps/g1zT6nVPRrnF3ZJC9">
-              <img src="images/contact/address.png" />
+              <img src="images/contact/address.png" alt='address'/>
               <p>
                 335 W Ponce de Leon Ave
                 <br />
@@ -21,31 +21,31 @@ function Contact() {
           </div>
           <div class="contacts contactmargin">
             <a href="mailto:scottallenerwin@gmail.com">
-              <img src="images/contact/email.png" />
+              <img src="images/contact/email.png" alt='Email'/>
               <p>scottallenerwin@gmail.com</p>
             </a>
           </div>
           <div class="contacts contactmargin">
             <a href="tel:770-328-2598">
-              <img src="images/contact/phone.png" />
+              <img src="images/contact/phone.png" alt='Phone'/>
               <p>770-328-2598</p>
             </a>
           </div>
           <div class="contacts contactmargin">
             <a href="https://www.linkedin.com/in/scott-allen-erwin/">
-              <img src="images/contact/ln.png" />
+              <img src="images/contact/ln.png" alt='ln'/>
               <p>@scott-allen-erwin</p>
             </a>
           </div>
           <div class="contacts contactmargin">
             <a href="https://www.facebook.com/scott.erwin2">
-              <img src="images/contact/FB.png" />
+              <img src="images/contact/FB.png" alt='Facebook'/>
               <p>@scott.erwin2</p>
             </a>
           </div>
           <div class="contacts contactmargin">
             <a href="https://www.instagram.com/erwin_scott/">
-              <img src="images/contact/IG.png" />
+              <img src="images/contact/IG.png" alt='IG'/>
               <p>@erwin_scott</p>
             </a>
           </div>

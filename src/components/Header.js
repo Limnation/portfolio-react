@@ -5,14 +5,20 @@ import "../styles/homepage.css";
 
 //javaScript object
 const background = {
-  src: "/images/header/heroImage.png",
+  heroSection: {
+    backgroundImage: 'url(/images/header/heroImage.png)',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundRize: 'cover',
+    position: 'relative'
+  }
 };
 
 function Header() {
   return (
     <header
       className="heroSection"
-      style={{ backgroundImage: `url(${background})` }}
+      style={background.heroSection}
       id="intro"
     >
       <nav className="topnav" id="myTopnav">
