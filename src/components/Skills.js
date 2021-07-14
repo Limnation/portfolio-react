@@ -2,7 +2,7 @@ import React from "react";
 // Import CSS File Dependency
 import "../styles/homepage.css";
 
-function Skills() {
+export default function Skills() {
   return (
     <section className="skills sectionArea" id="skills">
       <div className="skillsTitle sectionTitle">
@@ -74,5 +74,3 @@ function Skills() {
     </section>
   );
 }
-
-export default Skills;

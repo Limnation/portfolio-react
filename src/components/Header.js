@@ -6,21 +6,17 @@ import "../styles/homepage.css";
 //javaScript object
 const background = {
   heroSection: {
-    backgroundImage: 'url(/images/header/heroImage.png)',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundRize: 'cover',
-    position: 'relative'
-  }
+    backgroundImage: "url(/images/header/heroImage.png)",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundRize: "cover",
+    position: "relative",
+  },
 };
 
-function Header() {
+export default function Header(){
   return (
-    <header
-      className="heroSection"
-      style={background.heroSection}
-      id="intro"
-    >
+    <header className="heroSection" style={background.heroSection} id="intro">
       <nav className="topnav" id="myTopnav">
         <a href="index.html" className="active">
           <img
@@ -53,9 +49,7 @@ function Header() {
         >
           contact
         </a>
-        <a href="index.html#contact"
-          className="icon"
-        >
+        <a href="index.html#contact" className="icon">
           &#9776;
         </a>
       </nav>
@@ -95,6 +89,4 @@ function Header() {
       </nav>
     </header>
   );
-}
-
-export default Header;
+};

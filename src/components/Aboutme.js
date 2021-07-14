@@ -7,7 +7,7 @@ const background = {
   src: "/images/aboutme/fractals.png",
 };
 
-function AboutMe() {
+export default function AboutMe() {
   return (
     <section
       className="aboutMe sectionArea"
@@ -63,5 +63,3 @@ function AboutMe() {
     </section>
   );
 }
-
-export default AboutMe;

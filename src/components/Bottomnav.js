@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/botNav.css";
 import "../styles/footer.css";
 
-function Bottomnav() {
+export default function Bottomnav(){
   return (
     <nav className="bottomNav" id="bottomNav">
       <div className="BNMaxW">
@@ -29,5 +29,3 @@ function Bottomnav() {
     </nav>
   );
 }
-
-export default Bottomnav;

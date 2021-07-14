@@ -2,7 +2,7 @@ import React from "react";
 // Import CSS File Dependency
 import "../styles/homepage.css";
 
-function Contact() {
+export default function Contact() {
   return (
     <section className="contact sectionArea" id="contact">
       <div className="contactTitle sectionTitle">
@@ -70,5 +70,3 @@ function Contact() {
     </section>
   );
 }
-
-export default Contact;

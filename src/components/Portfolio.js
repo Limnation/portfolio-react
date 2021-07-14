@@ -7,7 +7,7 @@ const background = {
   src: "/images/protfolio/devices.png",
 };
 
-function Portfolio() {
+export default function Portfolio() {
   return (
     <section
       className="portfolio sectionArea"
@@ -114,5 +114,3 @@ function Portfolio() {
     </section>
   );
 }
-
-export default Portfolio;
