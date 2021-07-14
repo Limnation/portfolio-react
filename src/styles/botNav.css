@@ -9,7 +9,7 @@
 .BNMaxW {
   width: 1200px;
   margin: 0px auto 0px auto;
-  padding: 60px 30px;
+  padding: 40px 30px;
 }
 
 .BNMaxW h5 {
@@ -17,9 +17,10 @@
   font-size: 21px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+  margin: 20px 0px;
 }
 
-.BNMaxW li a {
+.BNMaxW a {
   text-decoration: none;
   color: #ffffff;
   font-size: 19px;
@@ -27,8 +28,8 @@
   font-weight: 500;
 }
 
-.BNMaxW li {
-  padding: 15px 0px;
+.bnlist {
+  padding: 10px 0px;
 }
 
 .BNMaxW ul {

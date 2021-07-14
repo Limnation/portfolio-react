@@ -9,19 +9,19 @@ function Bottomnav() {
       <div className="BNMaxW">
         <h5>Site Map</h5>
         <ul>
-          <li>
+          <li className="bnlist">
             <a href="#intro">Intro</a>
           </li>
-          <li>
+          <li className="bnlist">
             <a href="#aboutMe">about me</a>
-          </li>
-          <li>
+          </li >
+          <li className="bnlist">
             <a href="#skills">skills</a>
           </li>
-          <li>
+          <li className="bnlist">
             <a href="#portfolio">portfolio</a>
           </li>
-          <li>
+          <li className="bnlist">
             <a href="#contact">contact</a>
           </li>
         </ul>
