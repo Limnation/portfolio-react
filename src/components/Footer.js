@@ -4,7 +4,7 @@ import "../styles/footer.css";
 
 function Footer() {
   return (
-    <footer class="footer">
+    <footer className="footer">
       <p>&#xa9;2021 Scott Allen Erwin</p>
     </footer>
   );

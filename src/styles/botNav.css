@@ -2,6 +2,8 @@
 .bottomNav {
   background-color: #54565b;
   width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 .BNMaxW {
@@ -29,34 +31,6 @@
   padding: 15px 0px;
 }
 
-/* Medium devices (Small Mobile phones, 400px to 599px) */
-@media only screen and (min-width: 400px) {
-  /* Bottem Nav */
-}
-
-/* Mobile devices (large Mobile phones, 600px to 767px) */
-@media only screen and (min-width: 600px) {
-  /* Bottem Nav */
-}
-
-/* Medium devices (Ipad, 768px and 1023px) */
-@media only screen and (min-width: 768px) {
-  /* Bottem Nav */
-}
-
-/* Medium devices (Ipad Pro 1024px and 1223px) */
-@media only screen and (min-width: 1024px) {
-  /* Bottem Nav */
-}
-
-/* laptops devices (laptops, 1224px and 1823px) */
-@media only screen and (min-width: 1224px) {
-}
-
-/* Desktops (Desktops, 1824px and up) */
-@media only screen and (min-width: 1824px) {
-}
-
-/* Large Desktops devices (Desktops, 1920px and up) */
-@media only screen and (min-width: 1920px) {
+.BNMaxW ul {
+  list-style-type: none;
 }

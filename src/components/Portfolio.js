@@ -10,21 +10,21 @@ const background = {
 function Portfolio() {
   return (
     <section
-      class="portfolio sectionArea"
+      className="portfolio sectionArea"
       style={{ backgroundImage: `url(${background.src})` }}
       id="portfolio"
     >
-      <div class="portfolioTitle sectionTitle">
+      <div className="portfolioTitle sectionTitle">
         <h2>portfolio</h2>
       </div>
 
-      <div class="companies">
-        <div class="portfolioImages">
+      <div className="companies">
+        <div className="portfolioImages">
           <img
             onclick="onclickPtItem1();"
             onmouseover="onHoverPtItem1On();"
             onmouseout="onHoverPtItem1Off();"
-            class="portfolio-item1 portfolio-items"
+            className="portfolio-item1 portfolio-items"
             src="./images/protfolio/amg.png"
             alt="amg"
           />
@@ -32,7 +32,7 @@ function Portfolio() {
             onclick="onclickPtItem2();"
             onmouseover="onHoverPtItem2On();"
             onmouseout="onHoverPtItem2Off();"
-            class="portfolio-item2 portfolio-items"
+            className="portfolio-item2 portfolio-items"
             src="./images/protfolio/cig.png"
             alt="Cigarette Racing Team"
           />
@@ -40,7 +40,7 @@ function Portfolio() {
             onclick="onclickPtItem3();"
             onmouseover="onHoverPtItem3On();"
             onmouseout="onHoverPtItem3Off();"
-            class="portfolio-item3 portfolio-items"
+            className="portfolio-item3 portfolio-items"
             src="./images/protfolio/ehrmann.png"
             alt="ehrmann"
           />
@@ -48,7 +48,7 @@ function Portfolio() {
             onclick="onclickPtItem4();"
             onmouseover="onHoverPtItem4On();"
             onmouseout="onHoverPtItem4Off();"
-            class="portfolio-item4 portfolio-items"
+            className="portfolio-item4 portfolio-items"
             src="./images/protfolio/agv.png"
             alt="agv"
           />
@@ -56,7 +56,7 @@ function Portfolio() {
             onclick="onclickPtItem5();"
             onmouseover="onHoverPtItem5On();"
             onmouseout="onHoverPtItem5Off();"
-            class="portfolio-item5 portfolio-items"
+            className="portfolio-item5 portfolio-items"
             src="./images/protfolio/oml.png"
             alt="OML"
           />
@@ -64,7 +64,7 @@ function Portfolio() {
             onclick="onclickPtItem6();"
             onmouseover="onHoverPtItem6On();"
             onmouseout="onHoverPtItem6Off();"
-            class="portfolio-item6 portfolio-items"
+            className="portfolio-item6 portfolio-items"
             src="./images/protfolio/eci.png"
             alt="ECI"
           />
@@ -72,7 +72,7 @@ function Portfolio() {
             onclick="onclickPtItem7();"
             onmouseover="onHoverPtItem7On();"
             onmouseout="onHoverPtItem7Off();"
-            class="portfolio-item7 portfolio-items"
+            className="portfolio-item7 portfolio-items"
             src="./images/protfolio/sdc.png"
             alt="Salone Di Capelli"
           />
@@ -80,7 +80,7 @@ function Portfolio() {
             onclick="onclickPtItem8();"
             onmouseover="onHoverPtItem8On();"
             onmouseout="onHoverPtItem8Off();"
-            class="portfolio-item8 portfolio-items"
+            className="portfolio-item8 portfolio-items"
             src="./images/protfolio/project1.png"
             alt="project 1"
           />
@@ -88,15 +88,15 @@ function Portfolio() {
             onclick="onclickPtItem9();"
             onmouseover="onHoverPtItem9On();"
             onmouseout="onHoverPtItem9Off();"
-            class="portfolio-item9 portfolio-items"
+            className="portfolio-item9 portfolio-items"
             src="./images/protfolio/project2.png"
             alt="project 2"
           />
         </div>
       </div>
-      <div class="devices" id="devices"></div>
+      <div className="devices" id="devices"></div>
       <nav>
-        <div class="downArrowFG">
+        <div className="downArrowFG">
           <a href="#contact">
             <img
               src="./images/navigation/arrows/arrowDownblue.png"
@@ -104,7 +104,7 @@ function Portfolio() {
             />
           </a>
         </div>
-        <div class="downArrowBG">
+        <div className="downArrowBG">
           <img
             src="./images/navigation/arrows/arrowDownGray.png"
             alt="A downward facing gray arrow"

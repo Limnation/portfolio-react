@@ -1,11 +1,12 @@
 import React from "react";
 // Import CSS File Dependency
 import "../styles/botNav.css";
+import "../styles/footer.css";
 
-function BotNav() {
+function Bottomnav() {
   return (
-    <nav class="bottomNav" id="bottomNav">
-      <div class="BNMaxW">
+    <nav className="bottomNav" id="bottomNav">
+      <div className="BNMaxW">
         <h5>Site Map</h5>
         <ul>
           <li>
@@ -29,4 +30,4 @@ function BotNav() {
   );
 }
 
-export default BotNav;
+export default Bottomnav;

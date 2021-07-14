@@ -53,10 +53,8 @@ function Header() {
         >
           contact
         </a>
-        <a
-          href="javascript:void(0);"
+        <a href="index.html#contact"
           className="icon"
-          onclick="myClickFunction()"
         >
           &#9776;
         </a>
