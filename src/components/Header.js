@@ -24,6 +24,11 @@ const background2 = {
   },
 };
 
+const heroTextDisplay = {
+  show: "heroText",
+  hide: "heroText heroTextDistplay",
+};
+
 const navOptions = {
   desktop: "topnav",
   mobile: "topnav responsive",
@@ -32,14 +37,17 @@ const navOptions = {
 
 export default function Header() {
   const [heroImage1, heroImage2] = useState(background.heroSection);
+  const [heroText, heroText2] = useState(heroTextDisplay.show);
   const [desktopNav, mobileNav] = useState(navOptions.desktop);
 
   const handleMouseOver = () => {
     heroImage2(background2.heroSection);
+    heroText2(heroTextDisplay.hide);
   };
 
   const handleMouseOut = () => {
     heroImage2(background.heroSection);
+    heroText2(heroTextDisplay.show);
   };
 
   const handleOnClick = () => {
@@ -88,7 +96,7 @@ export default function Header() {
           &#9776;
         </a>
       </nav>
-      <div className="heroText" id="heroText">
+      <div className={heroText} id="heroText">
         <h1>Scott Allen Erwin</h1>
         <h3>Senior Web Specialist</h3>
       </div>

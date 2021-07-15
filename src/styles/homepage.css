@@ -30,6 +30,10 @@ a:hover {
 }
 
 /* hero Text Name and position */
+.heroTextDistplay {
+  display: none;
+}
+
 .heroText {
   position: absolute;
   left: 0;
