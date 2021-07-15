@@ -2,38 +2,7 @@ import React, { useState } from "react";
 // Import CSS File Dependency
 import "../styles/topNav.css";
 import "../styles/homepage.css";
-
-//javaScript object
-const background = {
-  heroSection: {
-    backgroundImage: "url(/images/header/heroImage.png)",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundRize: "cover",
-    position: "relative",
-  },
-};
-
-const background2 = {
-  heroSection: {
-    backgroundImage: "url(/images/header/heroImage2.png)",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundRize: "cover",
-    position: "relative",
-  },
-};
-
-const heroTextDisplay = {
-  show: "heroText",
-  hide: "heroText heroTextDistplay",
-};
-
-const navOptions = {
-  desktop: "topnav",
-  mobile: "topnav responsive",
-  none: "#mobile",
-};
+import { background, background2, heroTextDisplay, navOptions } from "./Objects";
 
 export default function Header() {
   const [heroImage1, heroImage2] = useState(background.heroSection);
