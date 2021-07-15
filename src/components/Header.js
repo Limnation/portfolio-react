@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // Import CSS File Dependency
 import "../styles/topNav.css";
 import "../styles/homepage.css";
@@ -22,10 +22,17 @@ const background2 = {
     backgroundRize: "cover",
     position: "relative",
   },
-}
+};
+
+const navOptions = {
+  desktop: "topnav",
+  mobile: "topnav responsive",
+  none: "#mobile",
+};
 
 export default function Header() {
   const [heroImage1, heroImage2] = useState(background.heroSection);
+  const [desktopNav, mobileNav] = useState(navOptions.desktop);
 
   const handleMouseOver = () => {
     heroImage2(background2.heroSection);
@@ -35,10 +42,18 @@ export default function Header() {
     heroImage2(background.heroSection);
   };
 
+  const handleOnClick = () => {
+    if (desktopNav === navOptions.desktop) {
+      mobileNav(navOptions.mobile);
+    } else {
+      mobileNav(navOptions.desktop);
+    }
+  };
+
   return (
     <header className="heroSection" style={heroImage1} id="intro">
-      <nav className="topnav" id="myTopnav">
-        <a href="index.html" className="active">
+      <nav className={desktopNav} id="myTopnav">
+        <a href={navOptions.none} className="active">
           <img
             src="images/navigation/top/navLogo.png"
             alt="Scott Allen Erwin"
@@ -47,7 +62,7 @@ export default function Header() {
         <a
           className="navBar"
           id="#portfolioNav"
-          href="index.html#portfolio"
+          href="#portfolio"
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
         >
@@ -55,7 +70,7 @@ export default function Header() {
         </a>
         <a
           className="navBar"
-          href="index.html#aboutMe"
+          href="#aboutMe"
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
         >
@@ -63,13 +78,13 @@ export default function Header() {
         </a>
         <a
           className="navBar"
-          href="index.html#contact"
+          href="#contact"
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
         >
           contact
         </a>
-        <a href="index.html#contact" className="icon">
+        <a href={navOptions.none} className="icon" onClick={handleOnClick}>
           &#9776;
         </a>
       </nav>
@@ -109,4 +124,4 @@ export default function Header() {
       </nav>
     </header>
   );
-};
+}
