@@ -1,19 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 // Import CSS File Dependency
 import "../styles/homepage.css";
-
-//javaScript object
-const background = {
-  src: "/images/protfolio/devices.png",
-};
+import { backgroundDevices, devices } from "./Objects";
 
 export default function Portfolio() {
   return (
-    <section
-      className="portfolio sectionArea"
-      style={{ backgroundImage: `url(${background.src})` }}
-      id="portfolio"
-    >
+    <section className="portfolio sectionArea" id="portfolio">
       <div className="portfolioTitle sectionTitle">
         <h2>portfolio</h2>
       </div>
@@ -94,7 +86,11 @@ export default function Portfolio() {
           />
         </div>
       </div>
-      <div className="devices" id="devices"></div>
+      <div
+        className="devices"
+        style={backgroundDevices.heroSection}
+        id="devices"
+      ></div>
       <nav>
         <div className="downArrowFG">
           <a href="#contact">
