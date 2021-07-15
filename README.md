@@ -1,5 +1,24 @@
 # 20 React: React Portfolio
 
+## Myreadme with description
+
+This main things I am trying to accomplish with this site is to make a portfolio with a modern/abstract fractal design adding some fun personality. I also wanted wanted to make it Responsive with metaquerys while also pushing my boundries by tieing in things I have already learned with new information I have learned from the class while attempting to finish in the time constraints.
+
+## screenshot
+
+![screenshot1](./pdf/1.JPG)
+![screenshot2](./pdf/2.JPG)
+![screenshot3](./pdf/3.JPG)
+![screenshot4](./pdf/4.JPG)
+![screenshot5](./pdf/5.JPG)
+![screenshot6](./pdf/6.JPG)
+(note: this does not show any of the hover events to view some of the criteria)
+
+# link to deployed application
+
+[repository](https://github.com/Limnation/portfolio-react)
+[published](https://limnation.github.io/portfolio-react/)
+
 ## Your Task
 
 Being a web developer means being part of a community. You’ll need a place not only to share your projects while you're applying for jobs or working as a freelancer but also to share your work with other developers and collaborate on projects.
