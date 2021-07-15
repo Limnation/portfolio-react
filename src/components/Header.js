@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 // Import CSS File Dependency
 import "../styles/topNav.css";
 import "../styles/homepage.css";
@@ -14,9 +14,29 @@ const background = {
   },
 };
 
-export default function Header(){
+const background2 = {
+  heroSection: {
+    backgroundImage: "url(/images/header/heroImage2.png)",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundRize: "cover",
+    position: "relative",
+  },
+}
+
+export default function Header() {
+  const [heroImage1, heroImage2] = useState(background.heroSection);
+
+  const handleMouseOver = () => {
+    heroImage2(background2.heroSection);
+  };
+
+  const handleMouseOut = () => {
+    heroImage2(background.heroSection);
+  };
+
   return (
-    <header className="heroSection" style={background.heroSection} id="intro">
+    <header className="heroSection" style={heroImage1} id="intro">
       <nav className="topnav" id="myTopnav">
         <a href="index.html" className="active">
           <img
@@ -28,24 +48,24 @@ export default function Header(){
           className="navBar"
           id="#portfolioNav"
           href="index.html#portfolio"
-          onmouseover="onHover();"
-          onmouseout="offHover();"
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
         >
           portfolio
         </a>
         <a
           className="navBar"
           href="index.html#aboutMe"
-          onmouseover="onHover();"
-          onmouseout="offHover();"
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
         >
           about me
         </a>
         <a
           className="navBar"
           href="index.html#contact"
-          onmouseover="onHover();"
-          onmouseout="offHover();"
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
         >
           contact
         </a>
