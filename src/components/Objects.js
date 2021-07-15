@@ -1,12 +1,12 @@
 // javaScript object
 // Portfolio ojbects
-export const devicesImages = {
+export const companies = {
   default: {
     devices: {
       backgroundImage: "url(/images/protfolio/devices.png)",
       backgroundRepeat: "no-repeat",
     },
-    site: "#desktop",
+    site: "#",
   },
   amg: {
     devices: {

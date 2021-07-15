@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 // Import CSS File Dependency
 import "../styles/homepage.css";
-import { devicesImages } from "./Objects";
+import { companies } from "./Objects";
 
 export default function Portfolio() {
   const [portfolioDevices, setportfolioDevices] = useState(
-    devicesImages.default.devices
+    companies.default.devices
   );
 
   const handleMouseOver = () => {
-    setportfolioDevices(devicesImages.amg.devices);
+    setportfolioDevices(companies.amg.devices);
   };
 
   const handleMouseOut = () => {
-    setportfolioDevices(devicesImages.default.devices);
+    setportfolioDevices(companies.default.devices);
   };
 
   return (
@@ -25,7 +25,7 @@ export default function Portfolio() {
       <div className="companies">
         <div className="portfolioImages">
           <img
-            onClick="onclickPtItem1();"
+            onClick={()=> window.open(companies.amg.site, "_blank")}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
             className="portfolio-item1 portfolio-items"
@@ -33,7 +33,7 @@ export default function Portfolio() {
             alt="amg"
           />
           <img
-            onClick="onclickPtItem2();"
+            onClick={()=> window.open(companies.cig.site, "_blank")}
             onMouseOver="onHoverPtItem2On();"
             onMouseOut="onHoverPtItem2Off();"
             className="portfolio-item2 portfolio-items"
@@ -41,7 +41,7 @@ export default function Portfolio() {
             alt="Cigarette Racing Team"
           />
           <img
-            onClick="onclickPtItem3();"
+            onClick={()=> window.open(companies.ehrmann.site, "_blank")}
             onMouseOver="onHoverPtItem3On();"
             onMouseOut="onHoverPtItem3Off();"
             className="portfolio-item3 portfolio-items"
@@ -49,7 +49,7 @@ export default function Portfolio() {
             alt="ehrmann"
           />
           <img
-            onClick="onclickPtItem4();"
+            onClick={()=> window.open(companies.agv.site, "_blank")}
             onMouseOver="onHoverPtItem4On();"
             onMouseOut="onHoverPtItem4Off();"
             className="portfolio-item4 portfolio-items"
@@ -57,7 +57,7 @@ export default function Portfolio() {
             alt="agv"
           />
           <img
-            onClick="onclickPtItem5();"
+            onClick={()=> window.open(companies.oml.site, "_blank")}
             onMouseOver="onHoverPtItem5On();"
             onMouseOut="onHoverPtItem5Off();"
             className="portfolio-item5 portfolio-items"
@@ -65,7 +65,7 @@ export default function Portfolio() {
             alt="OML"
           />
           <img
-            onClick="onclickPtItem6();"
+            onClick={()=> window.open(companies.eci.site, "_blank")}
             onMouseOver="onHoverPtItem6On();"
             onMouseOut="onHoverPtItem6Off();"
             className="portfolio-item6 portfolio-items"
@@ -73,7 +73,7 @@ export default function Portfolio() {
             alt="ECI"
           />
           <img
-            onClick="onclickPtItem7();"
+            onClick={()=> window.open(companies.sdc.site, "_blank")}
             onMouseOver="onHoverPtItem7On();"
             onMouseOut="onHoverPtItem7Off();"
             className="portfolio-item7 portfolio-items"
@@ -81,7 +81,7 @@ export default function Portfolio() {
             alt="Salone Di Capelli"
           />
           <img
-            onClick="onclickPtItem8();"
+            onClick={()=> window.open(companies.p1.site, "_blank")}
             onMouseOver="onHoverPtItem8On();"
             onMouseOut="onHoverPtItem8Off();"
             className="portfolio-item8 portfolio-items"
@@ -89,7 +89,7 @@ export default function Portfolio() {
             alt="project 1"
           />
           <img
-            onClick="onclickPtItem9();"
+            onClick={()=> window.open(companies.p2.site, "_blank")}
             onMouseOver="onHoverPtItem9On();"
             onMouseOut="onHoverPtItem9Off();"
             className="portfolio-item9 portfolio-items"
