@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // Import CSS File Dependency
 import "../styles/homepage.css";
-import { backgroundDevices, devices } from "./Objects";
+import { devicesImages, devicesLinks } from "./Objects";
 
 export default function Portfolio() {
   return (
@@ -86,11 +86,7 @@ export default function Portfolio() {
           />
         </div>
       </div>
-      <div
-        className="devices"
-        style={backgroundDevices.heroSection}
-        id="devices"
-      ></div>
+      <div className="devices" style={devicesImages.default} id="devices"></div>
       <nav>
         <div className="downArrowFG">
           <a href="#contact">
