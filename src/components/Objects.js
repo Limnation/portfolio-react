@@ -106,6 +106,6 @@ export const navOptions = {
 };
 
 // About Me object
-const fractals = {
+export const fractals = {
   src: "images/aboutme/fractals.png",
 };
