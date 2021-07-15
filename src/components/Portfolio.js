@@ -8,14 +8,46 @@ export default function Portfolio() {
     companies.default.devices
   );
 
-  const handleMouseOver = () => {
-    setportfolioDevices(companies.amg.devices);
-  };
-
   const handleMouseOut = () => {
     setportfolioDevices(companies.default.devices);
   };
 
+  const handleMouseOverAmg = () => {
+    setportfolioDevices(companies.amg.devices);
+  };
+
+  const handleMouseOverCig = () => {
+    setportfolioDevices(companies.cig.devices);
+  };
+
+  const handleMouseOverEhrmann = () => {
+    setportfolioDevices(companies.ehrmann.devices);
+  };
+
+  const handleMouseOverAgv = () => {
+    setportfolioDevices(companies.agv.devices);
+  };
+
+  const handleMouseOverOml = () => {
+    setportfolioDevices(companies.oml.devices);
+  };
+
+  const handleMouseOverEci = () => {
+    setportfolioDevices(companies.eci.devices);
+  };
+
+  const handleMouseOverSdc = () => {
+    setportfolioDevices(companies.sdc.devices);
+  };
+
+  const handleMouseOverP1 = () => {
+    setportfolioDevices(companies.p1.devices);
+  };
+
+  const handleMouseOverP2 = () => {
+    setportfolioDevices(companies.p2.devices);
+  };
+  
   return (
     <section className="portfolio sectionArea" id="portfolio">
       <div className="portfolioTitle sectionTitle">
@@ -25,73 +57,73 @@ export default function Portfolio() {
       <div className="companies">
         <div className="portfolioImages">
           <img
-            onClick={()=> window.open(companies.amg.site, "_blank")}
-            onMouseOver={handleMouseOver}
+            onClick={() => window.open(companies.amg.site, "_blank")}
+            onMouseOver={handleMouseOverAmg}
             onMouseOut={handleMouseOut}
             className="portfolio-item1 portfolio-items"
             src="./images/protfolio/amg.png"
             alt="amg"
           />
           <img
-            onClick={()=> window.open(companies.cig.site, "_blank")}
-            onMouseOver="onHoverPtItem2On();"
-            onMouseOut="onHoverPtItem2Off();"
+            onClick={() => window.open(companies.cig.site, "_blank")}
+            onMouseOver={handleMouseOverCig}
+            onMouseOut={handleMouseOut}
             className="portfolio-item2 portfolio-items"
             src="./images/protfolio/cig.png"
             alt="Cigarette Racing Team"
           />
           <img
-            onClick={()=> window.open(companies.ehrmann.site, "_blank")}
-            onMouseOver="onHoverPtItem3On();"
-            onMouseOut="onHoverPtItem3Off();"
+            onClick={() => window.open(companies.ehrmann.site, "_blank")}
+            onMouseOver={handleMouseOverEhrmann}
+            onMouseOut={handleMouseOut}
             className="portfolio-item3 portfolio-items"
             src="./images/protfolio/ehrmann.png"
             alt="ehrmann"
           />
           <img
-            onClick={()=> window.open(companies.agv.site, "_blank")}
-            onMouseOver="onHoverPtItem4On();"
-            onMouseOut="onHoverPtItem4Off();"
+            onClick={() => window.open(companies.agv.site, "_blank")}
+            onMouseOver={handleMouseOverAgv}
+            onMouseOut={handleMouseOut}
             className="portfolio-item4 portfolio-items"
             src="./images/protfolio/agv.png"
             alt="agv"
           />
           <img
-            onClick={()=> window.open(companies.oml.site, "_blank")}
-            onMouseOver="onHoverPtItem5On();"
-            onMouseOut="onHoverPtItem5Off();"
+            onClick={() => window.open(companies.oml.site, "_blank")}
+            onMouseOver={handleMouseOverOml}
+            onMouseOut={handleMouseOut}
             className="portfolio-item5 portfolio-items"
             src="./images/protfolio/oml.png"
             alt="OML"
           />
           <img
-            onClick={()=> window.open(companies.eci.site, "_blank")}
-            onMouseOver="onHoverPtItem6On();"
-            onMouseOut="onHoverPtItem6Off();"
+            onClick={() => window.open(companies.eci.site, "_blank")}
+            onMouseOver={handleMouseOverEci}
+            onMouseOut={handleMouseOut}
             className="portfolio-item6 portfolio-items"
             src="./images/protfolio/eci.png"
             alt="ECI"
           />
           <img
-            onClick={()=> window.open(companies.sdc.site, "_blank")}
-            onMouseOver="onHoverPtItem7On();"
-            onMouseOut="onHoverPtItem7Off();"
+            onClick={() => window.open(companies.sdc.site, "_blank")}
+            onMouseOver={handleMouseOverSdc}
+            onMouseOut={handleMouseOut}
             className="portfolio-item7 portfolio-items"
             src="./images/protfolio/sdc.png"
             alt="Salone Di Capelli"
           />
           <img
-            onClick={()=> window.open(companies.p1.site, "_blank")}
-            onMouseOver="onHoverPtItem8On();"
-            onMouseOut="onHoverPtItem8Off();"
+            onClick={() => window.open(companies.p1.site, "_blank")}
+            onMouseOver={handleMouseOverP1}
+            onMouseOut={handleMouseOut}
             className="portfolio-item8 portfolio-items"
             src="./images/protfolio/project1.png"
             alt="project 1"
           />
           <img
-            onClick={()=> window.open(companies.p2.site, "_blank")}
-            onMouseOver="onHoverPtItem9On();"
-            onMouseOut="onHoverPtItem9Off();"
+            onClick={() => window.open(companies.p2.site, "_blank")}
+            onMouseOver={handleMouseOverP2}
+            onMouseOut={handleMouseOut}
             className="portfolio-item9 portfolio-items"
             src="./images/protfolio/project2.png"
             alt="project 2"

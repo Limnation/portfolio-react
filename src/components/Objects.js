@@ -10,7 +10,7 @@ export const companies = {
   },
   amg: {
     devices: {
-      backgroundImage: "url(/images/protfolio/amgDevices.png')",
+      backgroundImage: "url(/images/protfolio/amgDevices.png)",
       backgroundRepeat: "no-repeat",
     },
     site: "https://www.mercedes-amg.com/en/home.html",
