@@ -1,17 +1,13 @@
 import React from "react";
 // Import CSS File Dependency
 import "../styles/homepage.css";
-
-//javaScript object
-const background = {
-  src: "/images/aboutme/fractals.png",
-};
+import { fractals } from "./Objects";
 
 export default function AboutMe() {
   return (
     <section
       className="aboutMe sectionArea"
-      style={{ backgroundImage: `url(${background.src})` }}
+      style={{ backgroundImage: `url(${fractals.src})` }}
       id="aboutMe"
     >
       <div className="aboutMeTitle sectionTitle">

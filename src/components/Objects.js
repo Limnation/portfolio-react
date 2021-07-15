@@ -104,3 +104,8 @@ export const navOptions = {
   mobile: "topnav responsive",
   none: "#mobile",
 };
+
+// About Me object
+const fractals = {
+  src: "images/aboutme/fractals.png",
+};
