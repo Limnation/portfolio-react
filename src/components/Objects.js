@@ -1,13 +1,13 @@
 // javaScript object
 // Portfolio ojbects
-const backgroundDevices = {
+export const backgroundDevices = {
   heroSection: {
     backgroundImage: "url(/images/protfolio/devices.png)",
     backgroundRepeat: "no-repeat",
   },
 };
 
-const devices = {
+export const devices = {
   default: {
     backgroundImage: "url(/images/protfolio/devices.png)",
   },
