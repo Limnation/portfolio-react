@@ -24,10 +24,6 @@ export default function Portfolio() {
     setportfolioDevices(companies.ehrmann.devices);
   };
 
-  const handleMouseOverAgv = () => {
-    setportfolioDevices(companies.agv.devices);
-  };
-
   const handleMouseOverOml = () => {
     setportfolioDevices(companies.oml.devices);
   };
