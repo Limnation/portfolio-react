@@ -71,6 +71,13 @@ export const companies = {
     },
     site: "https://limited-footwear.herokuapp.com/",
   },
+  p3: {
+    devices: {
+      backgroundImage: "url(images/protfolio/p3Devices.png)",
+      backgroundRepeat: "no-repeat",
+    },
+    site: "https://doufos.herokuapp.com/",
+  },
 };
 
 // Header object

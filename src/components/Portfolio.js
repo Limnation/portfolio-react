@@ -47,7 +47,11 @@ export default function Portfolio() {
   const handleMouseOverP2 = () => {
     setportfolioDevices(companies.p2.devices);
   };
-  
+
+  const handleMouseOverP3 = () => {
+    setportfolioDevices(companies.p3.devices);
+  };
+
   return (
     <section className="portfolio sectionArea" id="portfolio">
       <div className="portfolioTitle sectionTitle">
@@ -81,18 +85,10 @@ export default function Portfolio() {
             alt="ehrmann"
           />
           <img
-            onClick={() => window.open(companies.agv.site, "_blank")}
-            onMouseOver={handleMouseOverAgv}
-            onMouseOut={handleMouseOut}
-            className="portfolio-item4 portfolio-items"
-            src="./images/protfolio/agv.png"
-            alt="agv"
-          />
-          <img
             onClick={() => window.open(companies.oml.site, "_blank")}
             onMouseOver={handleMouseOverOml}
             onMouseOut={handleMouseOut}
-            className="portfolio-item5 portfolio-items"
+            className="portfolio-item4 portfolio-items"
             src="./images/protfolio/oml.png"
             alt="OML"
           />
@@ -100,7 +96,7 @@ export default function Portfolio() {
             onClick={() => window.open(companies.eci.site, "_blank")}
             onMouseOver={handleMouseOverEci}
             onMouseOut={handleMouseOut}
-            className="portfolio-item6 portfolio-items"
+            className="portfolio-item5 portfolio-items"
             src="./images/protfolio/eci.png"
             alt="ECI"
           />
@@ -108,7 +104,7 @@ export default function Portfolio() {
             onClick={() => window.open(companies.sdc.site, "_blank")}
             onMouseOver={handleMouseOverSdc}
             onMouseOut={handleMouseOut}
-            className="portfolio-item7 portfolio-items"
+            className="portfolio-item6 portfolio-items"
             src="./images/protfolio/sdc.png"
             alt="Salone Di Capelli"
           />
@@ -116,7 +112,7 @@ export default function Portfolio() {
             onClick={() => window.open(companies.p1.site, "_blank")}
             onMouseOver={handleMouseOverP1}
             onMouseOut={handleMouseOut}
-            className="portfolio-item8 portfolio-items"
+            className="portfolio-item7 portfolio-items"
             src="./images/protfolio/project1.png"
             alt="project 1"
           />
@@ -124,9 +120,17 @@ export default function Portfolio() {
             onClick={() => window.open(companies.p2.site, "_blank")}
             onMouseOver={handleMouseOverP2}
             onMouseOut={handleMouseOut}
-            className="portfolio-item9 portfolio-items"
+            className="portfolio-item8 portfolio-items"
             src="./images/protfolio/project2.png"
             alt="project 2"
+          />
+          <img
+            onClick={() => window.open(companies.p3.site, "_blank")}
+            onMouseOver={handleMouseOverP3}
+            onMouseOut={handleMouseOut}
+            className="portfolio-item9 portfolio-items"
+            src="./images/protfolio/project3.png"
+            alt="project 3"
           />
         </div>
       </div>
