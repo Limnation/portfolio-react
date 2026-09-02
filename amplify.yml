@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
+        - npm install --no-audit --no-fund --legacy-peer-deps
     build:
       commands:
         - npm run build
