@@ -6,6 +6,7 @@ frontend:
         - npm install --no-audit --no-fund --legacy-peer-deps
     build:
       commands:
+        - export NODE_OPTIONS=--openssl-legacy-provider
         - npm run build
   artifacts:
     baseDirectory: build
